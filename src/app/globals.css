@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('./screen.css');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +19,35 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+h1 {
+  @apply font-semibold text-3xl tracking-wide;
+}
+
+h2 {
+  @apply font-medium text-xl tracking-wide;
+}
+
+h3 {
+  @apply font-medium text-base tracking-wide;
+}
+
+h6 {
+  @apply font-medium tracking-wide;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: .25;
+}
+
+.skill-val {
+  @apply absolute bottom-3 -right-4 text-sm;
 }
