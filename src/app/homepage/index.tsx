@@ -1,7 +1,9 @@
 import SectionHome from './sectionHome'
+import SectionAbout from './sectionAbout'
 
 const components = {
-  SectionHome
+  SectionHome,
+  SectionAbout
 }
 
 export default components

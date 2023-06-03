@@ -48,6 +48,15 @@ hr {
   opacity: .25;
 }
 
+label {
+  @apply text-xs mb-2;
+}
+
+input, textarea {
+  @apply border-1 border-line-dark bg-primary-1 rounded-md py-3 px-2;
+  @apply focus:outline-none placeholder:text-black-primary focus:placeholder:text-line-dark;
+}
+
 .skill-val {
   @apply absolute bottom-3 -right-4 text-sm;
 }
