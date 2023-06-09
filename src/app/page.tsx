@@ -5,17 +5,22 @@ import SectionAbout from "./homepage/sectionAbout";
 import SectionService from "./homepage/sectionService";
 import SectionContact from "./homepage/sectionContact";
 import Footer from "./layout/footer";
+import Header from "./layout/header";
 
 export default function Home() {
   return (
-    <main>
-      <SectionHome />
+    <>
+      <Header />
+      <main className="lg:ml-24">
+        <SectionHome />
 
-      <SectionAbout />
+        <SectionAbout />
 
-      <SectionService />
+        <SectionService />
 
-      <SectionContact />
-    </main>
+        <SectionContact />
+      </main>
+      <Footer />
+    </>
   );
 }
