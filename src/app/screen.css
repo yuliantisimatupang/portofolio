@@ -5,24 +5,35 @@
 @media (min-width: 2001px) {
   .w-container {
     width: 1400px;
+    @apply lg:pl-28;
   }
 }
 
 @media (max-width: 2000px) {
   .w-container {
     width: 1400px;
+    @apply lg:pl-28;
   }
 }
 
 @media (max-width: 1500px) {
   .w-container {
     width: 95%;
+    @apply lg:pl-28;
   }
 }
 
 @media (max-width: 1200px) {
   .w-container {
     width: 95%;
+    @apply lg:pl-28;
+  }
+}
+
+@media (max-width: 1023px) {
+  .w-container {
+    width: 768px;
+    @apply px-4;
   }
 }
 

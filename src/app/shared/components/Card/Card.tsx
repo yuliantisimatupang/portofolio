@@ -13,7 +13,7 @@ interface Props {
 
 export default function Card({ data }: Props) {
   return (
-    <div className="flex gap-3 p-4 mb-5 w-full lg:max-w-xs bg-primary-1 rounded-xl border-2 border-line-dark">
+    <div className="flex gap-3 p-4 mb-5 w-full bg-primary-1 rounded-xl border-2 border-line-dark">
       <div className="rounded-full w-fit h-fit p-1.5 bg-black-primary mt-2">
         <BriefcaseIcon className='text-btn-primary h-7 w-7' />
       </div>

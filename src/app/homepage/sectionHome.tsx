@@ -3,7 +3,7 @@ import { ArrowDownTrayIcon } from '@heroicons/react/24/solid'
 
 export default function SectionHome() {
   return (
-    <section className="font-sans text-center py-20 text-black-primary bg-primary-1 min-h-screen overflow-hidden">
+    <section className="font-sans text-center py-20 text-black-primary bg-primary-1 min-h-screen overflow-hidden lg:flex">
       <div className="w-container lg:flex lg:flex-row-reverse lg:items-center lg:gap-10">
         <div className="lg:text-left">
           <div className="text-lg mb-2">👋 Hi, I’ m</div>
@@ -34,7 +34,7 @@ export default function SectionHome() {
               style={{ objectFit: "cover" }}
             />
           </div>
-          <div className="relative h-96 w-full rounded-[3rem] overflow-hidden lg:h-[30rem] lg:w-full">
+          <div className="relative h-96 w-full rounded-[3rem] overflow-hidden lg:h-[30rem] 3xl:h-[40rem]">
             <Image
               src={'/images/home-banner.jpg'}
               fill

@@ -8,7 +8,7 @@ interface Props {
 
 export default function CardMedsos({ data }: Props) {
   return (
-    <div className="flex items-center gap-3 px-4 py-3 my-4 w-full lg:max-w-xs bg-primary-1 rounded-xl border-2 border-line-dark">
+    <div className="flex items-center gap-3 px-4 py-3 mb-4 w-full bg-primary-1 rounded-xl border-2 border-line-dark">
       <div className="rounded-full w-fit h-fit p-1.5 bg-black-primary">
         <BriefcaseIcon className='text-btn-primary h-7 w-7' />
       </div>

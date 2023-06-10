@@ -24,43 +24,45 @@ export default function SectionContact() {
   ]
 
   return (
-    <section className="font-sans flex flex-col pt-14 text-black-primary bg-primary-2 min-h-screen h-fit overflow-hidden">
-      <div className="w-container">
-        <h2 className="text-2xl mb-8">Let's Discuss Your Project</h2>
-        <div className="flex items-center gap-5 mb-10">
-          <div className="bg-black-primary h-14 w-14 flex items-center rounded-full p-3">
-            <ChatBubbleLeftEllipsisIcon className='h-8 w-8 text-primary-2' />
+    <section className="font-sans flex flex-col pt-14 text-black-primary bg-primary-2 h-fit overflow-hidden">
+      <div className="w-container lg:flex lg:gap-7">
+        <div className="lg:w-1/2">
+          <h2 className="text-2xl mb-8">Let's Discuss Your Project</h2>
+          <div className="flex items-center gap-5 mb-10">
+            <div className="bg-black-primary h-14 w-14 flex items-center rounded-full p-3">
+              <ChatBubbleLeftEllipsisIcon className='h-8 w-8 text-primary-2' />
+            </div>
+            <div className="">
+              <h3 className="text-lg font-medium">Chat to us</h3>
+              <p>Our friendly team is there to help.</p>
+              <h5 className="font-medium">ehehe@doamin.com</h5>
+            </div>
           </div>
-          <div className="">
-            <h3 className="text-lg font-medium">Chat to us</h3>
-            <p>Our friendly team is there to help.</p>
-            <h5 className="font-medium">ehehe@doamin.com</h5>
+
+          <div className="flex items-center gap-5 mb-10">
+            <div className="bg-black-primary h-14 w-14 flex items-center rounded-full p-3">
+              <MapIcon className='h-8 w-8 text-primary-2' />
+            </div>
+            <div className="">
+              <h3 className="text-lg font-medium">Visit us</h3>
+              <p>Come say hello at our office HQ.</p>
+              <h5 className="font-medium">Jakarta, DKI Jakarta</h5>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-5 mb-10">
+            <div className="bg-black-primary h-14 w-14 flex items-center rounded-full p-3">
+              <DevicePhoneMobileIcon className='h-8 w-8 text-primary-2' />
+            </div>
+            <div className="">
+              <h3 className="text-lg font-medium">Call us</h3>
+              <p>Mon-Fri from 8am to 5pm.</p>
+              <h5 className="font-medium">+62 81123321236</h5>
+            </div>
           </div>
         </div>
 
-        <div className="flex items-center gap-5 mb-10">
-          <div className="bg-black-primary h-14 w-14 flex items-center rounded-full p-3">
-            <MapIcon className='h-8 w-8 text-primary-2' />
-          </div>
-          <div className="">
-            <h3 className="text-lg font-medium">Visit us</h3>
-            <p>Come say hello at our office HQ.</p>
-            <h5 className="font-medium">Jakarta, DKI Jakarta</h5>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-5 mb-10">
-          <div className="bg-black-primary h-14 w-14 flex items-center rounded-full p-3">
-            <DevicePhoneMobileIcon className='h-8 w-8 text-primary-2' />
-          </div>
-          <div className="">
-            <h3 className="text-lg font-medium">Call us</h3>
-            <p>Mon-Fri from 8am to 5pm.</p>
-            <h5 className="font-medium">+62 81123321236</h5>
-          </div>
-        </div>
-
-        <div className="p-4 mb-32 w-full lg:max-w-xs bg-primary-1 rounded-xl border-2 border-line-dark">
+        <div className="p-4 mb-32 w-full lg:w-1/2 bg-primary-1 rounded-xl border-2 border-line-dark">
           <h2 className="mb-5">
             Got Ideas? We've got the skills. Let's team up.
           </h2>
