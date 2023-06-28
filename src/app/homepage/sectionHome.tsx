@@ -36,7 +36,8 @@ export default function SectionHome() {
           </div>
           <div className="relative h-96 w-full rounded-[3rem] overflow-hidden lg:h-[30rem] 3xl:h-[40rem]">
             <Image
-              src={'/images/home-banner.jpg'}
+              src={'/images/IMG_9364.png'}
+            
               fill
               alt={""}
               style={{ objectFit: "cover" }}

@@ -7,18 +7,23 @@ import { Medsos } from '../shared/entities/medsos.entity'
 export default function SectionAbout() {
   const dataExperience: Experience[] = [
     {
-      duration: "2014 - 2017",
-      position: "Quality Assurance - Freelance",
+      duration: "2023 - Present",
+      position: "Quality Engineer - PT ASLI RI",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      duration: "2017 - 2019",
-      position: "Quality Assurance - AnterAja",
+      duration: "2021 - 2023",
+      position: "Quality Engineer - Anteraja",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      duration: "2019 - Present",
-      position: "QA Engineer - AsliRI",
+      duration: "2019 - 2021",
+      position: "QA Engineer Internship - PT Javan Cipta Solusi",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      duration: "2021 - 2021",
+      position: "QA Internship - CV. KomParTo",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -129,7 +134,7 @@ export default function SectionAbout() {
             I Am Available For QA Engineer Projects
           </h5>
           <p className="mb-10 max-w-md">
-            Born in 2000, AB type living in USA. We provide on-screen design for websites and apps, as well as front-end implementation. We will continue to pursue a wide range of expressions and better code by pursuing our “likes”.
+          Born in 1999, kuliah di Institut teknologi del dari tahun 2017 – 2021. Memiliki pengalaman sebagai QA mulai dari tahun 2020 hingga saat ini. Sangat tertarik  dan antusias dengan pengujian aplikasi berbasis automation dan sedang belajar untuk automation selenium dan Cypress. Memahami beberapa tools pengujian seperti Katalon, jmeter, playwright, postman testing API, cypress.
           </p>
           <hr />
           <div className="flex gap-3 items-center w-fit mt-5 mb-8 uppercase">
@@ -151,7 +156,7 @@ export default function SectionAbout() {
             <div className="md:flex gap-5">
               <div className="relative aspect-square lg:aspect-auto md:h-auto md:w-1/2 lg:h-72 lg:w-72 rounded-xl overflow-hidden mb-12 lg:mt-7">
                 <Image
-                  src={'/images/about-banner.jpg'}
+                  src={'/images/IMG_0382-copy.png'}
                   fill
                   alt={""}
                   style={{ objectFit: "cover" }}

@@ -19,6 +19,8 @@ export default function Header({ objectRef }: any) {
     })
   }
 
+  
+
   const isVisible = [
     useIsVisible(objectRef.home),
     useIsVisible(objectRef.about),
@@ -26,8 +28,14 @@ export default function Header({ objectRef }: any) {
     useIsVisible(objectRef.contact)
   ]
 
+  // const list = isVisible
+  //   .map((x, i) => ({
+  //     text: "masterList[i]",
+  //   }))
+  //   .filter(x => x. > 0)
+
   React.useEffect(() => {
-    // console.log('T1', isVisible)
+    console.log('T1', isVisible)
   }, [isVisible])
 
   return (
@@ -52,19 +60,19 @@ export default function Header({ objectRef }: any) {
             Home
           </div>
           <div onClick={() => toSection("about")} className="">
-            <div className={`${false && 'bg-btn-primary'} mb-3 rounded-2xl px-4 py-1 mx-auto w-fit`}>
+            <div className={`${isVisible[1] && 'bg-btn-primary'} mb-3 rounded-2xl px-4 py-1 mx-auto w-fit`}>
               <UserIcon className="h-6 w-6" />
             </div>
             About
           </div>
           <div onClick={() => toSection("service")} className="">
-            <div className={`${false && 'bg-btn-primary'} mb-3 rounded-2xl px-4 py-1 mx-auto w-fit`}>
+            <div className={`${isVisible[2] && 'bg-btn-primary'} mb-3 rounded-2xl px-4 py-1 mx-auto w-fit`}>
               <BriefcaseIcon className="h-6 w-6" />
             </div>
             Service
           </div>
           <div onClick={() => toSection("contact")} className="">
-            <div className={`${false && 'bg-btn-primary'} mb-3 rounded-2xl px-4 py-1 mx-auto w-fit`}>
+            <div className={`${isVisible[3] && 'bg-btn-primary'} mb-3 rounded-2xl px-4 py-1 mx-auto w-fit`}>
               <PhoneIcon className="h-6 w-6" />
             </div>
             Contact

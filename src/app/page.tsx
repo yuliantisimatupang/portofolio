@@ -16,7 +16,7 @@ export default function Home() {
     service: React.useRef(null),
     contact: React.useRef(null),
   }
-  console.log('T1b', objectRef.home)
+
   return (
     <>
       <Header objectRef={objectRef} />
