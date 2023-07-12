@@ -22,7 +22,7 @@ export default function Card({ data }: Props) {
         <span className="text-xs mb-1">{data.duration}</span>
         <h5 className="mb-3 font-semibold text-lg">{data.position}</h5>
         <ul className="list-disc">
-          {data.description.map(res => {
+          {data?.description && data?.description.map(res => {
             return <li key={res.title}>{res.title}</li>
           })}
         </ul>

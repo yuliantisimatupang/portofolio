@@ -9,17 +9,17 @@ export default function Test2() {
     {
       duration: "2014 - 2017",
       position: "Quality Assurance - Freelance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       duration: "2017 - 2019",
       position: "Quality Assurance - AnterAja",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       duration: "2019 - Present",
       position: "QA Engineer - AsliRI",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 
@@ -27,14 +27,17 @@ export default function Test2() {
     {
       name: "Skype Me",
       image: "Quality Assurance - Freelance",
+      href: ''
     },
     {
       name: "Whatsapp Me",
       image: "Quality Assurance - AnterAja",
+      href: ''
     },
     {
       name: "Resume",
       image: "QA Engineer - AsliRI",
+      href: ''
     }
   ]
 

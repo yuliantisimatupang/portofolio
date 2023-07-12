@@ -9,17 +9,17 @@ export default function SectionService() {
     {
       duration: "2014 - 2017",
       position: "Quality Assurance - Freelance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       duration: "2017 - 2019",
       position: "Quality Assurance - AnterAja",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       duration: "2019 - Present",
       position: "QA Engineer - AsliRI",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 
@@ -44,7 +44,7 @@ export default function SectionService() {
                   <div className="mt-8">
                     <h5 className="mb-2 font-semibold text-lg">{data.position}</h5>
                     <p className="text-sm">
-                      {data.description}
+                      {data.shortdescription}
                     </p>
                   </div>
                 </div>
