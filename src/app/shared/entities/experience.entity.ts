@@ -1,5 +1,10 @@
+interface DetailJobs {
+  title: string
+}
+
 export interface Experience {
   duration: string
   position: string
-  description: string
+  shortdescription? :string
+  description?: DetailJobs[]
 }

@@ -9,17 +9,17 @@ export default function SectionContact() {
     {
       duration: "2014 - 2017",
       position: "Quality Assurance - Freelance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       duration: "2017 - 2019",
       position: "Quality Assurance - AnterAja",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       duration: "2019 - Present",
       position: "QA Engineer - AsliRI",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 
@@ -34,8 +34,8 @@ export default function SectionContact() {
             </div>
             <div className="">
               <h3 className="text-lg font-medium">Chat to us</h3>
-              <p>Our friendly team is there to help.</p>
-              <h5 className="font-medium">ehehe@doamin.com</h5>
+              <p>It would be great to get connected with you.</p>
+              <h5 className="font-medium">yuliantisimatupang@gmail.com</h5>
             </div>
           </div>
 

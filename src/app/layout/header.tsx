@@ -35,7 +35,7 @@ export default function Header({ objectRef }: any) {
   //   .filter(x => x. > 0)
 
   React.useEffect(() => {
-    console.log('T1', isVisible)
+    // console.log('T1', isVisible)
   }, [isVisible])
 
   return (
