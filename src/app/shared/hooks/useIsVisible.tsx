@@ -1,4 +1,4 @@
-import React, { MutableRefObject, RefObject } from "react";
+import React, { MutableRefObject, RefObject } from 'react'
 
 export default function UseIsVisible(ref: any) {
   // const [isIntersecting, setIntersecting] = React.useState(false);
@@ -12,18 +12,18 @@ export default function UseIsVisible(ref: any) {
   // }, [ref]);
 
   // return isIntersecting;
-  const [isIntersecting, setIntersecting] = React.useState(false);
+  const [isIntersecting, setIntersecting] = React.useState(false)
 
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) =>
-      setIntersecting(entry.isIntersecting)
-    );
+  // React.useEffect(() => {
+  //   const observer = new IntersectionObserver(([entry]) =>
+  //     setIntersecting(entry.isIntersecting)
+  //   );
 
-    observer?.observe(ref.current);
-    return () => {
-      observer.disconnect();
-    };
-  }, [ref]);
+  //   observer?.observe(ref.current);
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [ref]);
 
-  return isIntersecting;
+  return isIntersecting
 }

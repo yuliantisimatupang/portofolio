@@ -1,7 +1,6 @@
-'use client'
-import { BriefcaseIcon } from "@heroicons/react/24/solid"
-import React from "react"
-import { Medsos } from "../../entities/medsos.entity"
+import { BriefcaseIcon } from '@heroicons/react/24/solid'
+import React from 'react'
+import { Medsos } from '../../entities/medsos.entity'
 
 interface Props {
   title: string

@@ -7,20 +7,23 @@ import { Medsos } from '../shared/entities/medsos.entity'
 export default function SectionService() {
   const dataExperience: Experience[] = [
     {
-      duration: "2014 - 2017",
-      position: "Quality Assurance - Freelance",
-      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      duration: '',
+      position: 'Web Testing',
+      shortdescription:
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
     {
-      duration: "2017 - 2019",
-      position: "Quality Assurance - AnterAja",
-      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      duration: '',
+      position: 'Mobile Testing',
+      shortdescription:
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
     {
-      duration: "2019 - Present",
-      position: "QA Engineer - AsliRI",
-      shortdescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      duration: '',
+      position: 'API Testing',
+      shortdescription:
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
   ]
 
   return (
@@ -32,25 +35,24 @@ export default function SectionService() {
         </div>
         {/* <div className="lg:flex lg:flex-wrap lg:gap-5"> */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-          {
-            dataExperience.map(data => {
-              return (
-                <div key={data.position} className="p-6 mb-5 w-full bg-primary-2 rounded-xl border-2 border-line-dark">
-                  <div className="relative w-fit h-fit p-3 py-4 mt-2">
-                    <div className="absolute rounded-lg top-0 left-0 origin-bottom-right rotate-12 h-full w-full bg-[#e9e7d3]"></div>
-                    <div className="absolute rounded-lg top-0 left-0 h-full w-full bg-btn-primary"></div>
-                    <DeviceTabletIcon className='relative text-black-primary h-12 w-12 z-10' />
-                  </div>
-                  <div className="mt-8">
-                    <h5 className="mb-2 font-semibold text-lg">{data.position}</h5>
-                    <p className="text-sm">
-                      {data.shortdescription}
-                    </p>
-                  </div>
+          {dataExperience.map(data => {
+            return (
+              <div
+                key={data.position}
+                className="p-6 mb-5 w-full bg-primary-2 rounded-xl border-2 border-line-dark"
+              >
+                <div className="relative w-fit h-fit p-3 py-4 mt-2">
+                  <div className="absolute rounded-lg top-0 left-0 origin-bottom-right rotate-12 h-full w-full bg-[#e9e7d3]"></div>
+                  <div className="absolute rounded-lg top-0 left-0 h-full w-full bg-btn-primary"></div>
+                  <DeviceTabletIcon className="relative text-black-primary h-12 w-12 z-10" />
                 </div>
-              )
-            })
-          }
+                <div className="mt-8">
+                  <h5 className="mb-2 font-semibold text-lg">{data.position}</h5>
+                  <p className="text-sm">{data.shortdescription}</p>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

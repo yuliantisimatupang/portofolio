@@ -30,7 +30,7 @@ export default function SectionHome() {
             <Image src={'/images/flower.svg'} fill alt={''} style={{ objectFit: 'cover' }} />
           </div>
           <div className="relative h-96 w-full rounded-[3rem] overflow-hidden lg:h-[30rem] 3xl:h-[40rem]">
-            <Image src={'/images/IMG_9364.png'} fill alt={''} style={{ objectFit: 'cover' }} />
+            <Image src={'/images/main-profile.jpg'} fill alt={''} style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </div>
