@@ -1,3 +1,4 @@
+@charset "utf-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,15 +18,18 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
 }
 
 h1 {
-  @apply font-semibold text-3xl tracking-wide;
+  @apply font-semibold text-3xl lg:text-5xl tracking-wide;
 }
 
 h2 {
@@ -45,18 +49,23 @@ hr {
   color: inherit;
   border: 0;
   border-top: 1px solid;
-  opacity: .25;
+  opacity: 0.25;
 }
 
 label {
   @apply text-xs mb-2;
 }
 
-input, textarea {
+input,
+textarea {
   @apply border-1 border-line-dark bg-primary-1 rounded-md py-3 px-2;
   @apply focus:outline-none placeholder:text-black-primary focus:placeholder:text-line-dark;
 }
 
 .skill-val {
   @apply absolute bottom-3 -right-4 text-sm;
+}
+
+.img-main-profile {
+  @apply h-[28rem] mobile-m:h-[30rem] mobile-l:h-[36rem] lg:h-[25rem] xl:h-[32rem] 2xl:h-[40rem];
 }

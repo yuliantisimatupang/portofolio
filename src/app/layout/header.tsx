@@ -33,7 +33,9 @@ export default function Header({ objectRef }: any) {
     <div className="fixed z-20">
       <div className="lg:hidden relative z-50 h-14 w-screen bg-primary-2 text-black-primary font-sans border-b-1 border-line-dark">
         <div className="w-container h-full flex items-center justify-between">
-          <span>INI LOGO</span>
+          <div className="relative h-8 w-8">
+            <Image src={'/svg/butterfly.svg'} fill alt={''} style={{ objectFit: 'cover' }} />
+          </div>
           <div onClick={() => setOpenMenu(prev => !prev)} className="bg-btn-primary rounded-lg p-1">
             <Bars3Icon className="h-6 w-6" />
           </div>
@@ -44,7 +46,11 @@ export default function Header({ objectRef }: any) {
           openMenu && '-translate-x-24'
         } absolute top-0 lg:translate-x-0 transition-all duration-300 ease-in-out transform-gpu lg:transform-cpu flex flex-col z-50 h-screen w-24 bg-primary-2 border-r-1 border-line-dark text-black-primary font-sans`}
       >
-        <div className="border-b-1 border-line-dark text-center py-2 w-full mb-10">INI LOGO</div>
+        <div className="border-b-1 border-line-dark text-center py-2 w-full mb-10">
+          <div className="relative h-8 w-8 my-3 mx-auto">
+            <Image src={'/svg/butterfly.svg'} fill alt={''} style={{ objectFit: 'cover' }} />
+          </div>
+        </div>
         <div className="flex flex-col gap-10 text-center font-medium text-sm">
           <div onClick={() => toSection(0)} className="cursor-pointer">
             <div

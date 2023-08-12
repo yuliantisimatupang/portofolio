@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Card, CardMedsos, ProgressLine } from '../shared/components'
 import { Experience } from '../shared/entities/experience.entity'
 import { Medsos } from '../shared/entities/medsos.entity'
+import { domAnimation, LazyMotion, m, Variants } from 'framer-motion'
 
 export default function SectionAbout() {
   const dataExperience: Experience[] = [
@@ -82,19 +83,33 @@ export default function SectionAbout() {
     {
       name: 'LinkedIn',
       image: 'Quality Assurance - Freelance',
-      href: 'https://www.linkedin.com/in/yulianti-masta-rotua-simatupang-04a1b917a/'
+      href: 'https://www.linkedin.com/in/yulianti-masta-rotua-simatupang-04a1b917a/',
     },
     {
-      name: 'Whatsapp Me',
+      name: 'Github',
       image: 'Quality Assurance - AnterAja',
-      href: '/'
+      href: 'https://github.com/yuliantisimatupang',
     },
     {
       name: 'Email',
       image: 'QA Engineer - AsliRI',
-      href: ''
-    }
+      href: 'mailto:yuliantisimatupang@gmail.com',
+    },
   ]
+
+  const ss: Variants = {
+    offscreen: {
+      y: 200,
+    },
+    onscreen: {
+      y: 0,
+      transition: {
+        type: 'spring',
+        bounce: 0.4,
+        duration: 1,
+      },
+    },
+  }
 
   return (
     // <section className="font-sans flex flex-col pt-14 lg:pt-20 text-black-primary bg-primary-2 h-fit">
@@ -184,11 +199,11 @@ export default function SectionAbout() {
             Bachelor of Informatics Engineering graduate with experience in manual testing and
             automation testing, Handles website-based, API, and mobile apps project testing. Focus
             on developing and executing automation scripts with the Katalon Testing Framework dan
-            Selenium creating a detailed and well-structured testing strategy. 
-            <br /><br />
-            Perform testing of
-            the performance testing of an application Dengan Jmeter. Understand product
-            specifications built, identify issues in the product being tested, and provide
+            Selenium creating a detailed and well-structured testing strategy.
+            <br />
+            <br />
+            Perform testing of the performance testing of an application Dengan Jmeter. Understand
+            product specifications built, identify issues in the product being tested, and provide
             problem-solving for the project. Make test plans and create test scenarios/test cases
             and provide feedback and improvement reports on test results. I like to learn new things
             and think creatively about how things can be done
@@ -198,11 +213,15 @@ export default function SectionAbout() {
             <div className="h-2 w-2 bg-btn-primary shadow-lg" />
             <h2>Experience</h2>
           </div>
+          {/* <LazyMotion features={domAnimation}>
+            <m.div variants={ss}> */}
           <div className="pb-10">
             {dataExperience.map(data => {
               return <Card key={data.duration} data={data} />
             })}
           </div>
+          {/* </m.div>
+          </LazyMotion> */}
         </div>
         <div className="lg:w-1/2">
           <div className="lg:sticky top-0 lg:h-fit lg:gap-5">

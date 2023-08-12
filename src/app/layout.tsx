@@ -33,6 +33,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         ></link>
+        {/* <link rel="icon" href="/images/ban-bug.png" sizes="any" /> */}
+        <link rel="icon" href="/svg/ban-bug.svg" sizes="any" />
       </head>
       <body className={inter.className + ' bg-primary-1 overflow-x-hidden'}>{children}</body>
     </html>
