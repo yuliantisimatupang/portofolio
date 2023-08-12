@@ -29,8 +29,8 @@ export default function Home() {
   const boundingClientRect = objRef.map(x =>
     x.entry
       ? {
-          top: (x.entry.target as HTMLInputElement | null).offsetTop,
-          height: (x.entry.target as HTMLInputElement | null).offsetHeight,
+          top: (x.entry.target as HTMLInputElement).offsetTop,
+          height: (x.entry.target as HTMLInputElement).offsetHeight,
           inView: x.inView,
         }
       : defaultData,
